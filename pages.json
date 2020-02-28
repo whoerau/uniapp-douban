@@ -1,28 +1,68 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/hotTheaters/hotTheaters",
-			"style": {}
-		}, {
-			"path": "pages/findMovie/findMovie",
+			"path": "pages/home/home",
 			"style": {
-				"navigationBarTitleText": "找片",
+				"navigationBarTitleText": "首页",
 				"enablePullDownRefresh": false,
 				"app-plus": {
 					"bounce": "none" //删除此项: mescroll-body支持iOS回弹
 				}
 			}
-		}, {
-			"path": "pages/my/my",
-			"style": {}
+		},
+		{
+			"path": "pages/book-video/book-video",
+			"style": {
+				"navigationBarTitleText": "书影音",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none" //删除此项: mescroll-body支持iOS回弹
+				}
+			}
+		},
+		{
+			"path": "pages/group/group",
+			"style": {
+				"navigationBarTitleText": "小组",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none" //删除此项: mescroll-body支持iOS回弹
+				}
+			}
+		},
+		{
+			"path": "pages/market/market",
+			"style": {
+				"navigationBarTitleText": "市集",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none" //删除此项: mescroll-body支持iOS回弹
+				}
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							
+						]
+					},
+					"bounce": "none" //删除此项: mescroll-body支持iOS回弹
+				}
+			}
 		}
-
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "",
-		"navigationBarBackgroundColor": "#FF9933",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTitleText": "某瓣APP",
+		"navigationBarBackgroundColor": "#4fca4f",
+		"backgroundColor": "#FFFFFF"
 	},
 	// tabbar
 	"tabBar": {
@@ -31,20 +71,32 @@
 		"borderStyle": "black",
 		"backgroundColor": "#F9F9F9",
 		"list": [{
-				"pagePath": "pages/hotTheaters/hotTheaters",
-				"iconPath": "static/tabbar/hot.png",
-				"selectedIconPath": "static/tabbar/hot@ed.png",
-				"text": "热映"
+				"pagePath": "pages/home/home",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home@eds.png",
+				"text": "首页"
 			},
 			{
-				"pagePath": "pages/findMovie/findMovie",
-				"iconPath": "static/tabbar/find.png",
-				"selectedIconPath": "static/tabbar/find@ed.png",
-				"text": "找片"
+				"pagePath": "pages/book-video/book-video",
+				"iconPath": "static/tabbar/book.png",
+				"selectedIconPath": "static/tabbar/book@ed.png",
+				"text": "书影音"
+			},
+			{
+				"pagePath": "pages/group/group",
+				"iconPath": "static/tabbar/group.png",
+				"selectedIconPath": "static/tabbar/group@ed.png",
+				"text": "小组"
 			}, {
-				"pagePath": "pages/my/my",
-				"iconPath": "static/tabbar/my.png",
-				"selectedIconPath": "static/tabbar/my@ed.png",
+				"pagePath": "pages/market/market",
+				"iconPath": "static/tabbar/market.png",
+				"selectedIconPath": "static/tabbar/market@ed.png",
+				"text": "市集"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/tabbar/mine.png",
+				"selectedIconPath": "static/tabbar/mine@ed.png",
 				"text": "我的"
 			}
 		]
