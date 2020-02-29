@@ -56,7 +56,6 @@ swiper,
 	border: 6upx solid #ffffff;
 }
 .con {
-	height: 1200upx;
 }
 .page-section-title {
 	margin-top: 50upx;
