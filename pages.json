@@ -50,13 +50,32 @@
 				"app-plus": {
 					"titleNView": {
 						"buttons": [
-							
+
 						]
 					},
 					"bounce": "none" //删除此项: mescroll-body支持iOS回弹
 				}
 			}
+		},
+		// #ifdef APP-PLUS || H5 || MP-ALIPAY
+		{
+			"path": "pages/home-page/home-page",
+			"style": {
+				"navigationBarTitleText": "个人主页",
+				"navigationBarBackgroundColor": "#4fca4f",
+				"app-plus": {
+					"titleNView": {
+						// "type": "transparent",//透明渐变导航栏 App-nvue 2.4.4+ 支持
+						"buttons": [{
+							"type": "share"
+						}]
+					},
+					"bounce": "none" //删除此项: mescroll-body支持iOS回弹
+				}
+				// "transparentTitle": "auto"
+			}
 		}
+		// #endif
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
