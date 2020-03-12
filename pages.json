@@ -6,7 +6,7 @@
 				"navigationBarTitleText": "首页",
 				"enablePullDownRefresh": false,
 				"app-plus": {
-					"bounce": "none" //删除此项: mescroll-body支持iOS回弹
+					"bounce":"none" // 建议禁止bounce效果
 				}
 			}
 		},
@@ -23,7 +23,7 @@
 		{
 			"path": "pages/group/group",
 			"style": {
-				"navigationStyle":"custom",
+				"navigationStyle": "custom",
 				"navigationBarTitleText": "小组",
 				"enablePullDownRefresh": false,
 				"app-plus": {
@@ -77,13 +77,13 @@
 			}
 		}
 		// #endif
-	    ,{
-            "path" : "pages/template/yiqing-demo/yiqing-demo",
-            "style" : {
-				"navigationStyle":"custom"
+		, {
+			"path": "pages/template/yiqing-demo/yiqing-demo",
+			"style": {
+				"navigationStyle": "custom"
 			}
-        }
-    ],
+		}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "某瓣APP",
