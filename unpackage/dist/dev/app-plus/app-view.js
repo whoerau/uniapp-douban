@@ -3270,7 +3270,57 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("v-uni-view", { attrs: { _i: 0 } })
+  return _c(
+    "v-uni-view",
+    { attrs: { _i: 0 } },
+    [
+      _c("v-uni-view", { attrs: { _i: 1 } }, [_vm._v("\n\t\t测试录音\n\t")]),
+      _c(
+        "v-uni-view",
+        { attrs: { _i: 2 } },
+        [
+          _c(
+            "v-uni-button",
+            {
+              attrs: { _i: 3 },
+              on: {
+                click: function($event) {
+                  return _vm.$handleViewEvent($event)
+                }
+              }
+            },
+            [_vm._v("开始录音")]
+          ),
+          _c(
+            "v-uni-button",
+            {
+              attrs: { _i: 4 },
+              on: {
+                click: function($event) {
+                  return _vm.$handleViewEvent($event)
+                }
+              }
+            },
+            [_vm._v("停止录音")]
+          ),
+          _c(
+            "v-uni-button",
+            {
+              attrs: { _i: 5 },
+              on: {
+                click: function($event) {
+                  return _vm.$handleViewEvent($event)
+                }
+              }
+            },
+            [_vm._v("播放录音")]
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var recyclableRender = false
 var staticRenderFns = []
